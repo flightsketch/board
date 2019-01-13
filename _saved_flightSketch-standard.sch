@@ -324,7 +324,7 @@ Wire Wire Line
 Wire Wire Line
 	6100 5600 6100 5750
 Wire Wire Line
-	5700 6050 6100 6050
+	5700 6050 6750 6050
 Wire Wire Line
 	4300 4700 3850 4700
 Wire Wire Line
@@ -357,10 +357,6 @@ Text GLabel 3450 1850 2    39   Input ~ 0
 CS_Flash
 Wire Wire Line
 	3100 1850 3450 1850
-Text GLabel 3450 2050 2    39   Input ~ 0
-GND
-Wire Wire Line
-	3100 2050 3450 2050
 $Comp
 L C C3
 U 1 1 5C382827
@@ -412,4 +408,84 @@ Wire Wire Line
 	1200 3400 1600 3400
 Wire Wire Line
 	1200 3500 1600 3500
+$Comp
+L R R1
+U 1 1 5C3AC597
+P 6750 5200
+F 0 "R1" V 6830 5200 50  0000 C CNN
+F 1 "R" V 6750 5200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 6680 5200 50  0001 C CNN
+F 3 "" H 6750 5200 50  0001 C CNN
+	1    6750 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5C3AC698
+P 6750 5700
+F 0 "R2" V 6830 5700 50  0000 C CNN
+F 1 "R" V 6750 5700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 6680 5700 50  0001 C CNN
+F 3 "" H 6750 5700 50  0001 C CNN
+	1    6750 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 5050 6000 5050
+Connection ~ 6000 5050
+Wire Wire Line
+	6750 5350 6750 5550
+Wire Wire Line
+	6750 6050 6750 5850
+Connection ~ 6100 6050
+Text GLabel 7050 5450 2    39   Input ~ 0
+v_coin
+Wire Wire Line
+	7050 5450 6750 5450
+Connection ~ 6750 5450
+Text GLabel 3450 2050 2    39   Input ~ 0
+v_coin
+Wire Wire Line
+	3100 2050 3450 2050
+$Comp
+L R R4
+U 1 1 5C3B0C14
+P 4150 4950
+F 0 "R4" V 4230 4950 50  0000 C CNN
+F 1 "R" V 4150 4950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 4080 4950 50  0001 C CNN
+F 3 "" H 4150 4950 50  0001 C CNN
+	1    4150 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 5C3B0C9E
+P 4050 5350
+F 0 "R3" V 4130 5350 50  0000 C CNN
+F 1 "R" V 4050 5350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 3980 5350 50  0001 C CNN
+F 3 "" H 4050 5350 50  0001 C CNN
+	1    4050 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 4800 4150 4700
+Connection ~ 4150 4700
+Wire Wire Line
+	4150 5100 4050 5100
+Wire Wire Line
+	4050 5100 4050 5200
+Wire Wire Line
+	4050 5500 4050 5550
+Connection ~ 4050 5550
+Text GLabel 3900 5150 0    39   Input ~ 0
+v_lipo
+Wire Wire Line
+	3900 5150 4050 5150
+Connection ~ 4050 5150
+Text GLabel 3450 2150 2    39   Input ~ 0
+v_lipo
+Wire Wire Line
+	3100 2150 3450 2150
 $EndSCHEMATC
