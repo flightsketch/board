@@ -3,7 +3,7 @@
   (general
     (links 39)
     (no_connects 1)
-    (area 102.857299 106.667299 132.092701 121.932701)
+    (area 101.15 104.6825 135.740096 123.465714)
     (thickness 1.6)
     (drawings 7)
     (tracks 200)
@@ -467,7 +467,7 @@
     (pad "" np_thru_hole oval (at 0 0) (size 1.905 3.81) (drill oval 1.905 3.81) (layers *.Cu *.Mask))
   )
 
-  (gr_text "mini\nBETA3" (at 108.585 119.38 90) (layer B.SilkS)
+  (gr_text "Mini rev-0a" (at 130.81 111.125 90) (layer B.SilkS)
     (effects (font (size 1.27 0.762) (thickness 0.1905)) (justify mirror))
   )
   (gr_text "OFF  ON" (at 130.81 112.395 90) (layer F.SilkS)
