@@ -279,11 +279,11 @@ X VIN 6 650 150 200 L 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# bl651
+# bl651-RESCUE-flightSketch-standard
 #
-DEF bl651 U 0 40 Y Y 1 F N
+DEF bl651-RESCUE-flightSketch-standard U 0 40 Y Y 1 F N
 F0 "U" 0 -100 60 H V C CNN
-F1 "bl651" 0 0 60 H V C CNN
+F1 "bl651-RESCUE-flightSketch-standard" 0 0 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW

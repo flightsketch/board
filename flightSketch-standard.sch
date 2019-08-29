@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:flightSketch-standard-rescue
 LIBS:power
 LIBS:device
 LIBS:switches
@@ -48,7 +49,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L bl651 U1
+L bl651-RESCUE-flightSketch-standard U1
 U 1 1 5BE8F532
 P 1950 950
 F 0 "U1" H 1950 850 60  0000 C CNN
