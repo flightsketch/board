@@ -69,7 +69,7 @@
     (pcbplotparams
       (layerselection 0x00008_00000000)
       (usegerberextensions false)
-      (excludeedgelayer true)
+      (excludeedgelayer false)
       (linewidth 0.100000)
       (plotframeref false)
       (viasonmask false)
@@ -395,6 +395,7 @@
   (module lib:BMP388 (layer F.Cu) (tedit 5C4D28B1) (tstamp 5C4D1AF2)
     (at 124.003 119.685)
     (path /5C4D27A4)
+    (solder_paste_margin 0.0508)
     (fp_text reference U2 (at 0.5 -2.074999) (layer F.SilkS) hide
       (effects (font (size 1.2 1.2) (thickness 0.15)))
     )
@@ -580,6 +581,7 @@
   (module lib:WSON-6 (layer F.Cu) (tedit 5D5CB707) (tstamp 5D58C791)
     (at 138.176 108.712 90)
     (path /5D5852E4)
+    (solder_paste_margin 0.0508)
     (fp_text reference U5 (at -2.5 0 180) (layer F.SilkS) hide
       (effects (font (size 1.2 1.2) (thickness 0.15)))
     )
@@ -607,6 +609,7 @@
   (module lib:WSON-6 (layer F.Cu) (tedit 5D5CB6E3) (tstamp 5D58C7A0)
     (at 138.049 119.075 90)
     (path /5D58BF69)
+    (solder_paste_margin 0.0508)
     (fp_text reference U6 (at -2.5 0 180) (layer F.SilkS) hide
       (effects (font (size 1.2 1.2) (thickness 0.15)))
     )
@@ -634,6 +637,7 @@
   (module lib:BMI088 (layer F.Cu) (tedit 5D5CB647) (tstamp 5D58C7B9)
     (at 119.532 109.906 225)
     (path /5D589361)
+    (solder_paste_margin 0.0508)
     (fp_text reference U7 (at -3.325 0 315) (layer F.SilkS) hide
       (effects (font (size 1.2 1.2) (thickness 0.15)))
     )
