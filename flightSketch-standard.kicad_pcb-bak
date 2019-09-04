@@ -352,6 +352,7 @@
   (module lib:BMP388 (layer F.Cu) (tedit 5C4D28B1) (tstamp 5C4D1AF2)
     (at 120.142 118.11)
     (path /5C4D27A4)
+    (solder_paste_margin 0.0508)
     (fp_text reference U2 (at 0.5 -2.074999) (layer F.SilkS) hide
       (effects (font (size 1.2 1.2) (thickness 0.15)))
     )
@@ -568,8 +569,8 @@
   (segment (start 107.7595 109.5375) (end 108.075602 109.5375) (width 0.25) (layer F.Cu) (net 3) (tstamp 5C4D2090))
   (segment (start 107.55 109.747) (end 107.7595 109.5375) (width 0.25) (layer F.Cu) (net 3) (tstamp 5C4D2089))
   (segment (start 109.409102 108.204) (end 109.474 108.204) (width 0.25) (layer F.Cu) (net 3) (tstamp 5C4D20AB))
-  (segment (start 118.11 113.792) (end 118.11 113.3729) (width 0.25) (layer B.Cu) (net 4) (status C00000))
-  (segment (start 118.11 113.3729) (end 120.4214 111.0615) (width 0.25) (layer B.Cu) (net 4) (tstamp 5D46446D) (status 400000))
+  (segment (start 118.11 113.792) (end 118.11 113.3729) (width 0.25) (layer B.Cu) (net 4))
+  (segment (start 118.11 113.3729) (end 120.4214 111.0615) (width 0.25) (layer B.Cu) (net 4) (tstamp 5D46446D))
   (segment (start 118.3386 109.6264) (end 118.11 109.855) (width 0.25) (layer B.Cu) (net 4) (tstamp 5D46447E))
   (segment (start 119.9261 109.6264) (end 118.3386 109.6264) (width 0.25) (layer B.Cu) (net 4) (tstamp 5D46447B))
   (segment (start 120.4214 110.1217) (end 119.9261 109.6264) (width 0.25) (layer B.Cu) (net 4) (tstamp 5D464478))
