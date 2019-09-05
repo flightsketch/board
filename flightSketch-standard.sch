@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:flightSketch-standard-rescue
 LIBS:power
 LIBS:device
 LIBS:switches
@@ -332,17 +331,6 @@ $EndComp
 Text GLabel 4250 950  0    39   Input ~ 0
 GND
 $Comp
-L Conn_01x01 J6
-U 1 1 5D5CCED4
-P 5050 1250
-F 0 "J6" H 5050 1350 50  0000 C CNN
-F 1 "Conn_01x01" H 5050 1150 50  0000 C CNN
-F 2 "lib:2-56_hole" H 5050 1250 50  0001 C CNN
-F 3 "" H 5050 1250 50  0001 C CNN
-	1    5050 1250
-	1    0    0    -1  
-$EndComp
-$Comp
 L Conn_01x01 J7
 U 1 1 5D5CCF46
 P 5050 1550
@@ -355,14 +343,9 @@ F 3 "" H 5050 1550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4850 950  4250 950 
-Wire Wire Line
-	4850 1250 4550 1250
-Wire Wire Line
-	4550 950  4550 1550
 Connection ~ 4550 950 
 Wire Wire Line
 	4550 1550 4850 1550
-Connection ~ 4550 1250
 $Comp
 L ISP4520 U1
 U 1 1 5D5F5CE9
@@ -452,7 +435,7 @@ U 1 1 5D609C3A
 P 8550 4250
 F 0 "U5" H 8550 4150 60  0000 C CNN
 F 1 "CAM-M8" H 8550 4250 60  0000 C CNN
-F 2 "" H 8550 4250 60  0001 C CNN
+F 2 "lib:CAM-M8" H 8550 4250 60  0001 C CNN
 F 3 "" H 8550 4250 60  0001 C CNN
 	1    8550 4250
 	1    0    0    -1  
@@ -540,4 +523,86 @@ Text GLabel 9400 3800 2    39   Input ~ 0
 CS_GPS
 Wire Wire Line
 	9200 3800 9400 3800
+Text GLabel 3000 1700 2    39   Input ~ 0
+RESET
+Wire Wire Line
+	2750 1700 3000 1700
+Text GLabel 3000 2000 2    39   Input ~ 0
+SCK
+Text GLabel 3000 2100 2    39   Input ~ 0
+MOSI
+Text GLabel 3000 2200 2    39   Input ~ 0
+MISO
+Wire Wire Line
+	2750 2000 3000 2000
+Wire Wire Line
+	2750 2100 3000 2100
+Wire Wire Line
+	2750 2200 3000 2200
+Text GLabel 3000 2500 2    39   Input ~ 0
+CS_Baro
+Text GLabel 3000 2400 2    39   Input ~ 0
+CS_Flash
+Text GLabel 3000 2600 2    39   Input ~ 0
+CS_GPS
+Wire Wire Line
+	2750 2400 3000 2400
+Wire Wire Line
+	2750 2500 3000 2500
+Wire Wire Line
+	2750 2600 3000 2600
+Text GLabel 3000 2750 2    39   Input ~ 0
+LED1
+Text GLabel 3000 2850 2    39   Input ~ 0
+DFU
+Wire Wire Line
+	2750 2750 3000 2750
+Wire Wire Line
+	2750 2850 3000 2850
+Text GLabel 3000 2950 2    39   Input ~ 0
+VBATT_sense
+Wire Wire Line
+	2750 2950 3000 2950
+Text GLabel 4650 4350 0    39   Input ~ 0
+VBATT
+Text GLabel 4650 5150 0    39   Input ~ 0
+GND
+$Comp
+L R R2
+U 1 1 5D6F335D
+P 4800 4600
+F 0 "R2" V 4880 4600 50  0000 C CNN
+F 1 "R" V 4800 4600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 4730 4600 50  0001 C CNN
+F 3 "" H 4800 4600 50  0001 C CNN
+	1    4800 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 5D6F33CF
+P 4800 4950
+F 0 "R3" V 4880 4950 50  0000 C CNN
+F 1 "R" V 4800 4950 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 4730 4950 50  0001 C CNN
+F 3 "" H 4800 4950 50  0001 C CNN
+	1    4800 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 4350 4800 4350
+Wire Wire Line
+	4800 4350 4800 4450
+Wire Wire Line
+	4800 4750 4800 4800
+Wire Wire Line
+	4650 5150 4800 5150
+Wire Wire Line
+	4800 5150 4800 5100
+Text GLabel 5000 4750 2    39   Input ~ 0
+VBATT_sense
+Wire Wire Line
+	5000 4750 4800 4750
+Wire Wire Line
+	4550 1550 4550 950 
 $EndSCHEMATC
