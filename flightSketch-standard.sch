@@ -48,17 +48,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L bl651 U1
-U 1 1 5BE8F532
-P 2500 1800
-F 0 "U1" H 2500 1700 60  0000 C CNN
-F 1 "bl651" H 2500 1800 60  0000 C CNN
-F 2 "lib:EYSLSNZWW" H 2500 1800 60  0001 C CNN
-F 3 "" H 2500 1800 60  0001 C CNN
-	1    2500 1800
-	1    0    0    -1  
-$EndComp
-$Comp
 L EEPROM U3
 U 1 1 5BF2300F
 P 7200 1750
@@ -69,65 +58,37 @@ F 3 "" H 6850 1700 50  0001 C CNN
 	1    7200 1750
 	1    0    0    -1  
 $EndComp
-Text GLabel 1500 1450 0    39   Input ~ 0
+Text GLabel 1500 1300 0    39   Input ~ 0
 GND
-Wire Wire Line
-	1500 1450 1800 1450
-Text GLabel 1500 1550 0    39   Input ~ 0
+Text GLabel 1500 1400 0    39   Input ~ 0
 GND
-Text GLabel 1500 1650 0    39   Input ~ 0
+Text GLabel 1500 1500 0    39   Input ~ 0
 GND
-Text GLabel 1500 1750 0    39   Input ~ 0
+Text GLabel 1500 1600 0    39   Input ~ 0
 GND
 Text GLabel 1500 1850 0    39   Input ~ 0
 VDD
-Wire Wire Line
-	1500 1550 1800 1550
-Wire Wire Line
-	1500 1650 1800 1650
-Wire Wire Line
-	1500 1750 1800 1750
-Wire Wire Line
-	1500 1850 1800 1850
-Text GLabel 1500 2100 0    39   Input ~ 0
-SWDCLK
-Wire Wire Line
-	1500 2100 1800 2100
 Text GLabel 1500 2000 0    39   Input ~ 0
+SWDCLK
+Text GLabel 1500 2100 0    39   Input ~ 0
 SWDIO
-Text GLabel 1500 2200 0    39   Input ~ 0
-RESET
-Wire Wire Line
-	1500 2000 1800 2000
-Wire Wire Line
-	1500 2200 1800 2200
-Text GLabel 1500 2300 0    39   Input ~ 0
-P0.18
-Wire Wire Line
-	1500 2300 1800 2300
-Text GLabel 3450 1450 2    39   Input ~ 0
+Text GLabel 3450 1300 2    39   Input ~ 0
 SCK
-Wire Wire Line
-	3100 1450 3450 1450
-Text GLabel 3450 1650 2    39   Input ~ 0
+Text GLabel 3450 1400 2    39   Input ~ 0
 MOSI
-Text GLabel 3450 1550 2    39   Input ~ 0
+Text GLabel 3450 1800 2    39   Input ~ 0
 MISO
-Wire Wire Line
-	3100 1550 3450 1550
-Wire Wire Line
-	3100 1650 3450 1650
-Text GLabel 2000 4250 2    39   Input ~ 0
+Text GLabel 3650 5900 2    39   Input ~ 0
 VDD
 $Comp
 L C C1
 U 1 1 5BFA2BAA
-P 1600 4550
-F 0 "C1" H 1625 4650 50  0000 L CNN
-F 1 "C" H 1625 4450 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805" H 1638 4400 50  0001 C CNN
-F 3 "" H 1600 4550 50  0001 C CNN
-	1    1600 4550
+P 2100 6150
+F 0 "C1" H 2125 6250 50  0000 L CNN
+F 1 "C" H 2125 6050 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 2138 6000 50  0001 C CNN
+F 3 "" H 2100 6150 50  0001 C CNN
+	1    2100 6150
 	1    0    0    -1  
 $EndComp
 Text GLabel 6500 1700 0    39   Input ~ 0
@@ -165,30 +126,16 @@ Wire Wire Line
 	7050 1300 7200 1300
 Wire Wire Line
 	7200 1300 7200 1450
-Text GLabel 3450 1950 2    39   Input ~ 0
+Text GLabel 3450 1600 2    39   Input ~ 0
 DFU
-Wire Wire Line
-	3100 1950 3450 1950
-Text GLabel 3250 2700 2    39   Input ~ 0
-DFU
-Text GLabel 2350 2700 0    39   Input ~ 0
-GND
-Wire Wire Line
-	2350 2700 2750 2700
-Wire Wire Line
-	2850 2700 3250 2700
-Text GLabel 3450 1750 2    39   Input ~ 0
+Text GLabel 3450 1900 2    39   Input ~ 0
 CS_Baro
-Wire Wire Line
-	3100 1750 3450 1750
 Text GLabel 6500 1850 0    39   Input ~ 0
 CS_Flash
 Wire Wire Line
 	6500 1850 6800 1850
-Text GLabel 3450 1850 2    39   Input ~ 0
+Text GLabel 3450 1500 2    39   Input ~ 0
 CS_Flash
-Wire Wire Line
-	3100 1850 3450 1850
 $Comp
 L C C2
 U 1 1 5C382827
@@ -214,36 +161,17 @@ $EndComp
 Text GLabel 1200 3000 0    39   Input ~ 0
 GND
 Text GLabel 1200 3400 0    39   Input ~ 0
-VDD
+VBATT
 Text GLabel 1200 3100 0    39   Input ~ 0
 SWDIO
 Text GLabel 1200 3200 0    39   Input ~ 0
 SWDCLK
-Text GLabel 1200 3300 0    39   Input ~ 0
-RESET
 Wire Wire Line
 	1200 3000 1600 3000
 Wire Wire Line
 	1200 3100 1600 3100
 Wire Wire Line
 	1200 3200 1600 3200
-Wire Wire Line
-	1200 3300 1600 3300
-Text GLabel 3450 2050 2    39   Input ~ 0
-v_coin
-Wire Wire Line
-	3100 2050 3450 2050
-Text GLabel 3450 2150 2    39   Input ~ 0
-v_lipo
-Wire Wire Line
-	3100 2150 3450 2150
-Wire Wire Line
-	2000 4250 1600 4250
-Wire Wire Line
-	1600 4250 1600 4400
-Wire Wire Line
-	1600 4700 1600 5300
-Connection ~ 1900 4250
 Wire Wire Line
 	1200 3400 1600 3400
 $Comp
@@ -289,19 +217,16 @@ Wire Wire Line
 	4500 3450 4750 3450
 Wire Wire Line
 	4500 3300 4750 3300
-Text GLabel 1500 5300 0    39   Input ~ 0
+Text GLabel 1650 6400 0    39   Input ~ 0
 GND
-Connection ~ 1600 5300
 Wire Wire Line
 	5800 3050 5650 3050
 Connection ~ 5650 3050
 Wire Wire Line
 	5800 3350 5800 3450
 Connection ~ 5800 3450
-Text GLabel 3450 2250 2    39   Input ~ 0
+Text GLabel 3450 1700 2    39   Input ~ 0
 LED1
-Wire Wire Line
-	3100 2250 3450 2250
 Text GLabel 3400 3700 2    39   Input ~ 0
 VDD
 Text GLabel 3400 4800 2    39   Input ~ 0
@@ -339,20 +264,112 @@ Wire Wire Line
 Wire Wire Line
 	3200 4800 3400 4800
 $Comp
-L Conn_01x02 J2
-U 1 1 5D706769
-P 2850 3100
-F 0 "J2" H 2850 3200 50  0000 C CNN
-F 1 "Conn_01x02" H 2850 2900 50  0000 C CNN
-F 2 "Connectors_JST:JST_GH_BM02B-GHS-TBT_02x1.25mm_Straight" H 2850 3100 50  0001 C CNN
-F 3 "" H 2850 3100 50  0001 C CNN
-	1    2850 3100
-	0    1    1    0   
+L LDL1117 U4
+U 1 1 5D770C6F
+P 2750 5950
+F 0 "U4" H 2750 5950 39  0000 C CNN
+F 1 "LDL1117" H 2750 6050 39  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 2750 5950 39  0001 C CNN
+F 3 "" H 2750 5950 39  0001 C CNN
+	1    2750 5950
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2850 2900 2850 2700
+	3350 5900 3650 5900
+$Comp
+L C C3
+U 1 1 5D77124B
+P 3450 6150
+F 0 "C3" H 3475 6250 50  0000 L CNN
+F 1 "C" H 3475 6050 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 3488 6000 50  0001 C CNN
+F 3 "" H 3450 6150 50  0001 C CNN
+	1    3450 6150
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	2750 2700 2750 2900
+	3450 6400 3450 6300
 Wire Wire Line
-	1600 5300 1500 5300
+	3450 6000 3450 5900
+Connection ~ 3450 5900
+$Comp
+L EYSLSNZWW U1
+U 1 1 5D77172F
+P 2450 1750
+F 0 "U1" H 2450 1750 60  0000 C CNN
+F 1 "EYSLSNZWW" H 2450 1750 60  0000 C CNN
+F 2 "lib:EYSLSNZWW" H 2450 1750 60  0001 C CNN
+F 3 "" H 2450 1750 60  0001 C CNN
+	1    2450 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 1300 1800 1300
+Wire Wire Line
+	1500 1400 1800 1400
+Wire Wire Line
+	1500 1500 1800 1500
+Wire Wire Line
+	1500 1600 1800 1600
+Wire Wire Line
+	1500 1850 1800 1850
+Wire Wire Line
+	1500 2000 1800 2000
+Wire Wire Line
+	1500 2100 1800 2100
+Wire Wire Line
+	2350 950  2350 850 
+Wire Wire Line
+	2350 850  2450 850 
+Wire Wire Line
+	2450 850  2450 950 
+Wire Wire Line
+	3100 1300 3450 1300
+Wire Wire Line
+	3100 1400 3450 1400
+Wire Wire Line
+	3450 1500 3100 1500
+Wire Wire Line
+	3100 1600 3450 1600
+Wire Wire Line
+	3450 1700 3100 1700
+Wire Wire Line
+	3100 1800 3450 1800
+Wire Wire Line
+	3450 1900 3100 1900
+Text GLabel 1200 3300 0    39   Input ~ 0
+DFU
+Wire Wire Line
+	1200 3300 1600 3300
+$Comp
+L Conn_01x01 J3
+U 1 1 5D772D49
+P 1800 2500
+F 0 "J3" H 1800 2600 50  0000 C CNN
+F 1 "Conn_01x01" H 1800 2400 50  0000 C CNN
+F 2 "lib:comp-hole" H 1800 2500 50  0001 C CNN
+F 3 "" H 1800 2500 50  0001 C CNN
+	1    1800 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 2500 1400 2500
+Wire Wire Line
+	1400 2500 1400 3000
+Connection ~ 1400 3000
+Text GLabel 1950 5550 0    39   Input ~ 0
+VBATT
+Wire Wire Line
+	2200 5900 2100 5900
+Wire Wire Line
+	2100 5550 2100 6000
+Wire Wire Line
+	2100 6300 2100 6400
+Wire Wire Line
+	1650 6400 3450 6400
+Connection ~ 2100 6400
+Wire Wire Line
+	1950 5550 2100 5550
+Connection ~ 2100 5900
+Connection ~ 2750 6400
 $EndSCHEMATC
