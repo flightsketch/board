@@ -1,0 +1,9 @@
+(module mounting_slot (layer F.Cu) (tedit 5C68C11D)
+  (fp_text reference REF** (at 0 0.5) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value mounting_slot (at 0 -0.5) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (pad "" np_thru_hole oval (at 0 0) (size 1.905 3.81) (drill oval 1.905 3.81) (layers *.Cu *.Mask))
+)

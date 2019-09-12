@@ -57,9 +57,6 @@
     (component lib:sw2
       (place SW1 127635 -111760 front 270 (PN SW_DPDT_x2))
     )
-    (component lib:mounting_slot
-      (place REF** 130302 -119126 front 0 (PN mounting_slot))
-    )
     (component LEDs:LED_0603
       (place D1 124206 -110236 front 270 (PN LED))
     )
@@ -67,7 +64,10 @@
       (place R1 124206 -113284 front 90 (PN R))
     )
     (component lib:BM832
-      (place U1 116713 -120777 front 90 (PN bl651))
+      (place U1 116713 -120777 front 90 (PN BM832A))
+    )
+    (component lib:mounting_slot
+      (place J2 130302 -119062 front 0 (PN Conn_01x01))
     )
   )
   (library
@@ -173,9 +173,6 @@
       (keepout "" (circle F.Cu 901.7 -3400.04 0))
       (keepout "" (circle B.Cu 901.7 -3400.04 0))
     )
-    (image lib:mounting_slot
-      (pin Oval[A]Pad_1905x3810_um @1 0 0)
-    )
     (image LEDs:LED_0603
       (outline (path signal 120  -1300 500  -1300 -500))
       (outline (path signal 100  -200 200  -200 -200))
@@ -262,6 +259,9 @@
       (pin Rect[T]Pad_400x400_um (rotate 90) 1 690 9450)
       (pin Rect[T]Pad_400x400_um (rotate 90) 45 9490 9450)
     )
+    (image lib:mounting_slot
+      (pin Oval[A]Pad_1905x3810_um @1 0 0)
+    )
     (padstack Oval[A]Pad_1905x3810_um
       (shape (path F.Cu 1905  0 -952.5  0 952.5))
       (shape (path B.Cu 1905  0 -952.5  0 952.5))
@@ -323,38 +323,38 @@
   )
   (network
     (net SWDIO
-      (pins J1-2 U1-5)
+      (pins J1-2 U1-43)
     )
     (net VDD
-      (pins C2-1 C1-1 U3-8 U3-7 U3-3 J1-5 U2-1 U2-10 SW1-1 R1-1 U1-26)
+      (pins C2-1 C1-1 U3-8 U3-7 U3-3 J1-5 U2-1 U2-10 SW1-1 R1-1 U1-28 U1-14)
     )
     (net SWDCLK
-      (pins J1-3 U1-6)
+      (pins J1-3 U1-42)
     )
     (net GND
-      (pins C2-2 SW2-1 SW2-1@1 C1-2 U3-4 J1-1 U2-3 U2-9 U2-8 BT1-2 U1-27 U1-16 U1-39
-        U1-1)
+      (pins C2-2 SW2-1 SW2-1@1 C1-2 U3-4 J1-1 U2-3 U2-9 U2-8 BT1-2 U1-18 U1-19 U1-2
+        U1-4 U1-30 U1-15 U1-13 U1-5 U1-3 U1-1 U1-45)
     )
     (net RESET
-      (pins J1-4 U1-7)
+      (pins J1-4 U1-40)
     )
     (net MOSI
       (pins U3-5 U2-4 U1-21)
     )
     (net SCK
-      (pins U3-6 U2-2 U1-22)
+      (pins U3-6 U2-2 U1-20)
     )
     (net MISO
-      (pins U3-2 U2-5 U1-35)
+      (pins U3-2 U2-5 U1-9)
     )
     (net DFU
-      (pins SW2-2 SW2-2@1 U1-10)
+      (pins SW2-2 SW2-2@1 U1-36)
     )
     (net CS_Baro
-      (pins U2-6 U1-34)
+      (pins U2-6 U1-10)
     )
     (net CS_Flash
-      (pins U3-1 U1-15)
+      (pins U3-1 U1-26)
     )
     (net VBATT
       (pins BT1-1 BT1-1@1 SW1-2)
@@ -363,7 +363,7 @@
       (pins D1-2 R1-2)
     )
     (net LED1
-      (pins D1-1 U1-30)
+      (pins D1-1 U1-37)
     )
     (class kicad_default "" CS_Baro CS_Flash DFU GND LED1 MISO MOSI "Net-(D1-Pad2)"
       "Net-(SW1-Pad3)" "Net-(U2-Pad7)" P0.18 RESET SCK SWDCLK SWDIO VBATT
