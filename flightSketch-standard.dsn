@@ -34,22 +34,19 @@
   )
   (placement
     (component Capacitors_SMD:C_0603
-      (place C2 117475 -119380 front 270 (PN C))
+      (place C2 119316 -116014 front 180 (PN C))
     )
     (component lib:bt
-      (place SW2 125476 -119380 front 90 (PN SW_Push))
+      (place SW2 124650 -119316 front 90 (PN SW_Push))
     )
     (component Capacitors_SMD:C_0805
       (place C1 123698 -115824 front 0 (PN C))
-    )
-    (component lib:SO8
-      (place U3 120015 -110871 front 180 (PN EEPROM))
     )
     (component lib:5pad_test
       (place J1 109474 -108204 front 0 (PN Conn_01x06))
     )
     (component lib:BMP388
-      (place U2 120142 -118110 front 0 (PN BMP380))
+      (place U2 120332 -112903 front 0 (PN BMP380))
     )
     (component lib:1225_glider
       (place BT1 118110 -113792 back 0 (PN Battery_Cell))
@@ -67,7 +64,13 @@
       (place U1 116713 -120777 front 90 (PN BM832A))
     )
     (component lib:mounting_slot
-      (place J2 130302 -119062 front 0 (PN Conn_01x01))
+      (place J2 129730 -118745 front 0 (PN Conn_01x01))
+    )
+    (component lib:USON8
+      (place U3 119507 -109220 front 180 (PN EEPROM))
+    )
+    (component lib:BMA2x2
+      (place U4 119253 -119570 front 45 (PN BMA253))
     )
   )
   (library
@@ -108,21 +111,6 @@
       (outline (path signal 50  1750 -870  -1750 -870))
       (pin Rect[T]Pad_1000x1250_um 1 -1000 0)
       (pin Rect[T]Pad_1000x1250_um 2 1000 0)
-    )
-    (image lib:SO8
-      (outline (path signal 150  -1705 3850  -2705 2850))
-      (outline (path signal 150  -2705 2850  -2705 -3850))
-      (outline (path signal 150  -2705 -3850  2705 -3850))
-      (outline (path signal 150  2705 -3850  2705 3850))
-      (outline (path signal 150  2705 3850  -1705 3850))
-      (pin Rect[T]Pad_600x1400_um 8 -1905 2650)
-      (pin Rect[T]Pad_600x1400_um 1 -1905 -2650)
-      (pin Rect[T]Pad_600x1400_um 7 -635 2650)
-      (pin Rect[T]Pad_600x1400_um 2 -635 -2650)
-      (pin Rect[T]Pad_600x1400_um 6 635 2650)
-      (pin Rect[T]Pad_600x1400_um 3 635 -2650)
-      (pin Rect[T]Pad_600x1400_um 5 1905 2650)
-      (pin Rect[T]Pad_600x1400_um 4 1905 -2650)
     )
     (image lib:5pad_test
       (outline (path signal 150  -5286.5 1206.5  -6286.5 206.5))
@@ -262,17 +250,62 @@
     (image lib:mounting_slot
       (pin Oval[A]Pad_1905x3810_um @1 0 0)
     )
+    (image lib:USON8
+      (outline (path signal 100  1500 1000  -1500 1000))
+      (outline (path signal 100  -1500 1000  -1500 -1000))
+      (outline (path signal 100  -1500 -1000  1500 -1000))
+      (outline (path signal 100  1500 -1000  1500 1000))
+      (pin Rect[T]Pad_250x350_um (rotate 270) 8 1225 750)
+      (pin Rect[T]Pad_250x350_um (rotate 270) 1 -1225 750)
+      (pin Rect[T]Pad_250x350_um (rotate 270) 7 1225 250)
+      (pin Rect[T]Pad_250x350_um (rotate 270) 2 -1225 250)
+      (pin Rect[T]Pad_250x350_um (rotate 270) 6 1225 -250)
+      (pin Rect[T]Pad_250x350_um (rotate 270) 3 -1225 -250)
+      (pin Rect[T]Pad_250x350_um (rotate 270) 5 1225 -750)
+      (pin Rect[T]Pad_250x350_um (rotate 270) 4 -1225 -750)
+      (pin Rect[T]Pad_200x1600_um 9 0 0)
+    )
+    (image lib:BMA2x2
+      (outline (path signal 100  1000 1000  -1000 1000))
+      (outline (path signal 100  -1000 1000  -1000 -1000))
+      (outline (path signal 100  -1000 -1000  1000 -1000))
+      (outline (path signal 110  1000 -1000  1000 1000))
+      (pin Rect[T]Pad_280x410_um 6 250 -815)
+      (pin Rect[T]Pad_280x410_um 5 -250 -815)
+      (pin Rect[T]Pad_280x410_um 11 250 815)
+      (pin Rect[T]Pad_280x410_um 12 -250 815)
+      (pin Rect[T]Pad_280x410_um (rotate 270) 10 815 750)
+      (pin Rect[T]Pad_280x410_um (rotate 270) 1 -815 750)
+      (pin Rect[T]Pad_280x410_um (rotate 270) 9 815 250)
+      (pin Rect[T]Pad_280x410_um (rotate 270) 2 -815 250)
+      (pin Rect[T]Pad_280x410_um (rotate 270) 8 815 -250)
+      (pin Rect[T]Pad_280x410_um (rotate 270) 3 -815 -250)
+      (pin Rect[T]Pad_280x410_um (rotate 270) 7 815 -750)
+      (pin Rect[T]Pad_280x410_um (rotate 270) 4 -815 -750)
+    )
     (padstack Oval[A]Pad_1905x3810_um
       (shape (path F.Cu 1905  0 -952.5  0 952.5))
       (shape (path B.Cu 1905  0 -952.5  0 952.5))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_200x1600_um
+      (shape (rect F.Cu -100 -800 100 800))
       (attach off)
     )
     (padstack Rect[T]Pad_250x275_um
       (shape (rect F.Cu -125 -137.5 125 137.5))
       (attach off)
     )
+    (padstack Rect[T]Pad_250x350_um
+      (shape (rect F.Cu -125 -175 125 175))
+      (attach off)
+    )
     (padstack Rect[T]Pad_2540x6604_um
       (shape (rect F.Cu -1270 -3302 1270 3302))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_280x410_um
+      (shape (rect F.Cu -140 -205 140 205))
       (attach off)
     )
     (padstack Rect[T]Pad_400x400_um
@@ -285,10 +318,6 @@
     )
     (padstack Rect[T]Pad_5080x5080_um
       (shape (rect F.Cu -2540 -2540 2540 2540))
-      (attach off)
-    )
-    (padstack Rect[T]Pad_600x1400_um
-      (shape (rect F.Cu -300 -700 300 700))
       (attach off)
     )
     (padstack Rect[T]Pad_800x750_um
@@ -326,26 +355,26 @@
       (pins J1-2 U1-43)
     )
     (net VDD
-      (pins C2-1 C1-1 U3-8 U3-7 U3-3 J1-5 U2-1 U2-10 SW1-1 R1-1 U1-28 U1-14)
+      (pins C2-1 C1-1 J1-5 U2-1 U2-10 SW1-1 R1-1 U1-28 U1-14 U3-8 U3-7 U3-3 U4-3 U4-7)
     )
     (net SWDCLK
       (pins J1-3 U1-42)
     )
     (net GND
-      (pins C2-2 SW2-1 SW2-1@1 C1-2 U3-4 J1-1 U2-3 U2-9 U2-8 BT1-2 U1-18 U1-19 U1-2
-        U1-4 U1-30 U1-15 U1-13 U1-5 U1-3 U1-1 U1-45)
+      (pins C2-2 SW2-1 SW2-1@1 C1-2 J1-1 U2-3 U2-9 U2-8 BT1-2 U1-18 U1-19 U1-2 U1-4
+        U1-30 U1-15 U1-13 U1-5 U1-3 U1-1 U1-45 U3-4 U4-11 U4-9 U4-8)
     )
     (net RESET
       (pins J1-4 U1-40)
     )
     (net MOSI
-      (pins U3-5 U2-4 U1-21)
+      (pins U2-4 U1-21 U3-5 U4-2)
     )
     (net SCK
-      (pins U3-6 U2-2 U1-20)
+      (pins U2-2 U1-20 U3-6 U4-12)
     )
     (net MISO
-      (pins U3-2 U2-5 U1-9)
+      (pins U2-5 U1-9 U3-2 U4-1)
     )
     (net DFU
       (pins SW2-2 SW2-2@1 U1-36)
@@ -354,7 +383,7 @@
       (pins U2-6 U1-10)
     )
     (net CS_Flash
-      (pins U3-1 U1-26)
+      (pins U1-26 U3-1)
     )
     (net VBATT
       (pins BT1-1 BT1-1@1 SW1-2)
@@ -365,9 +394,12 @@
     (net LED1
       (pins D1-1 U1-37)
     )
-    (class kicad_default "" CS_Baro CS_Flash DFU GND LED1 MISO MOSI "Net-(D1-Pad2)"
-      "Net-(SW1-Pad3)" "Net-(U2-Pad7)" P0.18 RESET SCK SWDCLK SWDIO VBATT
-      VDD v_coin v_lipo
+    (net CS_Acc
+      (pins U1-29 U4-10)
+    )
+    (class kicad_default "" CS_Acc CS_Baro CS_Flash DFU GND LED1 MISO MOSI
+      "Net-(D1-Pad2)" "Net-(SW1-Pad3)" "Net-(U2-Pad7)" "Net-(U4-Pad5)" "Net-(U4-Pad6)"
+      P0.18 RESET SCK SWDCLK SWDIO VBATT VDD v_coin v_lipo
       (circuit
         (use_via Via[0-1]_508:254_um)
       )

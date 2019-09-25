@@ -53,7 +53,7 @@ U 1 1 5BF2300F
 P 7200 1750
 F 0 "U3" H 6900 2000 50  0000 L CNN
 F 1 "EEPROM" H 7250 2000 50  0000 L CNN
-F 2 "lib:SO8" H 6850 1700 50  0001 C CNN
+F 2 "lib:USON8" H 6850 1700 50  0001 C CNN
 F 3 "" H 6850 1700 50  0001 C CNN
 	1    7200 1750
 	1    0    0    -1  
@@ -422,4 +422,56 @@ Wire Wire Line
 	1500 2600 1800 2600
 Wire Wire Line
 	1500 2700 1800 2700
+$Comp
+L BMA253 U4
+U 1 1 5D8AB0A4
+P 8450 3700
+F 0 "U4" H 8450 3700 60  0000 C CNN
+F 1 "BMA253" H 8450 3700 60  0000 C CNN
+F 2 "lib:BMA2x2" H 8450 3700 60  0001 C CNN
+F 3 "" H 8450 3700 60  0001 C CNN
+	1    8450 3700
+	1    0    0    -1  
+$EndComp
+Text GLabel 9550 3600 2    39   Input ~ 0
+SCK
+Text GLabel 9550 3400 2    39   Input ~ 0
+MOSI
+Text GLabel 9550 3500 2    39   Input ~ 0
+MISO
+Text GLabel 9550 3800 2    39   Input ~ 0
+CS_Acc
+Text GLabel 7350 3400 0    39   Input ~ 0
+VDD
+Text GLabel 7350 3800 0    39   Input ~ 0
+GND
+Wire Wire Line
+	9250 3400 9550 3400
+Wire Wire Line
+	9250 3500 9550 3500
+Wire Wire Line
+	9250 3600 9550 3600
+Wire Wire Line
+	9250 3800 9550 3800
+Wire Wire Line
+	7650 3400 7350 3400
+Wire Wire Line
+	7650 3500 7500 3500
+Wire Wire Line
+	7500 3500 7500 3400
+Connection ~ 7500 3400
+Wire Wire Line
+	7650 3800 7350 3800
+Wire Wire Line
+	7650 3900 7500 3900
+Wire Wire Line
+	7500 3800 7500 4000
+Connection ~ 7500 3800
+Wire Wire Line
+	7500 4000 7650 4000
+Connection ~ 7500 3900
+Text GLabel 3450 1950 2    39   Input ~ 0
+CS_Acc
+Wire Wire Line
+	3100 1950 3450 1950
 $EndSCHEMATC

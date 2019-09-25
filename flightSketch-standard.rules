@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 560)
+    (start_pass_no 3547)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -64,7 +64,7 @@
   )
   (class "kicad_default"
     SWDIO VDD SWDCLK GND RESET MOSI SCK MISO
-    DFU "CS_Baro" "CS_Flash" VBATT "Net-(D1-Pad2)" LED1
+    DFU "CS_Baro" "CS_Flash" VBATT "Net-(D1-Pad2)" LED1 "CS_Acc"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
