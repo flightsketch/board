@@ -11,18 +11,18 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 3547)
+    (start_pass_no 2046)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 3.0)
+      (against_preferred_direction_trace_costs 2.7)
     )
     (layer_rule B.Cu
       (active on)
       (preferred_direction vertical)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 1.5)
+      (against_preferred_direction_trace_costs 1.6)
     )
   )
   (rule
@@ -63,8 +63,9 @@
     )
   )
   (class "kicad_default"
-    SWDIO VDD SWDCLK GND RESET MOSI SCK MISO
-    DFU "CS_Baro" "CS_Flash" VBATT "Net-(D1-Pad2)" LED1 "CS_Acc"
+    SWDIO SWDCLK GND MOSI SCK MISO DFU "CS_Baro"
+    "CS_Flash" VBATT "Net-(D1-Pad2)" LED1 "CS_Acc" "VDD_SENS" "Net-(Q1-Pad2)" "SENS_PWR_EN"
+    "PWR_SW"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
