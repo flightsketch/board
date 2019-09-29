@@ -1,4 +1,4 @@
-update=11/11/2018 3:20:44 PM
+update=Sunday, September 29, 2019 'PMt' 04:18:51 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -62,3 +62,4 @@ LibName30=atmel
 LibName31=contrib
 LibName32=valves
 LibName33=lib
+LibName34=/Users/russ/Desktop/lib/transfer
