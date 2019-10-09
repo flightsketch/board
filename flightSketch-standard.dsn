@@ -49,7 +49,7 @@
       (place U2 121412 -116205 front 0 (PN BMP380))
     )
     (component lib:1225_glider
-      (place BT1 116332 -113792 back 0 (PN Battery_Cell))
+      (place BT1 115824 -113792 back 0 (PN Battery_Cell))
     )
     (component LEDs:LED_0603
       (place D1 120777 -108966 front 270 (PN LED))
@@ -62,7 +62,7 @@
       (place U1 116713 -120840 front 90 (PN BM832A))
     )
     (component lib:mounting_slot
-      (place J2 123508 -119761 front 90 (PN Conn_01x01))
+      (place J2 124079 -120015 front 90 (PN Conn_01x01))
     )
     (component lib:USON8
       (place U3 118174 -109030 front 270 (PN EEPROM))
@@ -397,7 +397,7 @@
       (pins U1-26 U3-1)
     )
     (net VBATT
-      (pins C1-1 J1-5 BT1-1 BT1-1@1 R1-1 U1-28 U1-14 U3-7 U3-3 C3-1 Q1-3 SW1-1 SW1-1@1)
+      (pins C1-1 J1-5 BT1-1 BT1-1@1 R1-1 U1-28 U1-14 C3-1 Q1-3 SW1-1 SW1-1@1)
     )
     (net "Net-(D1-Pad2)"
       (pins D1-2 R1-2)
@@ -409,7 +409,7 @@
       (pins U1-29 U4-10)
     )
     (net VDD_SENS
-      (pins C2-1 U2-1 U2-10 U3-8 U4-3 U4-7 Q1-1)
+      (pins C2-1 U2-1 U2-10 U3-8 U3-7 U3-3 U4-3 U4-7 Q1-1)
     )
     (net "Net-(Q1-Pad2)"
       (pins Q1-2 R2-1)
@@ -422,7 +422,7 @@
     )
     (class kicad_default "" CS_Acc CS_Baro CS_Flash DFU GND LED1 MISO MOSI
       "Net-(D1-Pad2)" "Net-(Q1-Pad2)" "Net-(U2-Pad7)" "Net-(U4-Pad5)" "Net-(U4-Pad6)"
-      P0.18 PWR_SW RESET SCK SENS_PWR_EN SWDCLK SWDIO VBATT VDD VDD_SENS v_coin
+      P0.18 PWR_SW RESET SCK SENS_PWR_EN SWDCLK SWDIO VBATT VDD_SENS v_coin
       v_lipo
       (circuit
         (use_via Via[0-1]_508:254_um)
@@ -434,10 +434,5 @@
     )
   )
   (wiring
-    (via "Via[0-1]_508:254_um"  106934 -108585 (net SWDIO)(type protect))
-    (via "Via[0-1]_508:254_um"  109474 -108585 (net SWDCLK)(type protect))
-    (via "Via[0-1]_508:254_um"  104394 -108585 (net GND)(type protect))
-    (via "Via[0-1]_508:254_um"  112014 -108585 (net DFU)(type protect))
-    (via "Via[0-1]_508:254_um"  114554 -108585 (net VBATT)(type protect))
   )
 )

@@ -32,6 +32,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:lib
+LIBS:transfer
 LIBS:flightSketch-standard-cache
 EELAYER 25 0
 EELAYER END
@@ -90,7 +91,7 @@ F 3 "" H 1600 4550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 6500 1700 0    39   Input ~ 0
-VDD
+VDD_SENS
 Text GLabel 7050 2150 0    39   Input ~ 0
 GND
 Text GLabel 7750 1650 2    39   Input ~ 0
