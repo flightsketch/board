@@ -27,10 +27,8 @@
     (keepout "" (polygon B.Cu 0  106223 -121539  101727 -121539  101727 -109995  110668 -109995
             110680 -121539))
     (keepout "" (polygon F.Cu 0  101752 -121437  101600 -109931  110515 -110058  110668 -121564))
-    (keepout "" (polygon F.Cu 0  152400 -111062  147510 -111062  147510 -117475  151574 -117475
-            152400 -117030))
-    (keepout "" (polygon B.Cu 0  152400 -111062  147510 -111062  147510 -117475  151574 -117475
-            152400 -117030))
+    (keepout "" (polygon F.Cu 0  126492 -111506  133604 -111506  133604 -106807  126492 -106807))
+    (keepout "" (polygon B.Cu 0  126492 -111506  133604 -111506  133604 -106807  126492 -106807))
     (via "Via[0-1]_508:254_um" "Via[0-1]_600:400_um")
     (rule
       (width 203.2)
@@ -41,49 +39,46 @@
   )
   (placement
     (component Capacitors_SMD:C_0603
-      (place C2 117704 -109017 front 0 (PN C))
+      (place C2 122047 -111887 front 0 (PN C))
     )
     (component lib:bt
-      (place SW2 127635 -119126 front 90 (PN SW_Push))
+      (place SW2 142875 -109855 front 90 (PN SW_Push))
     )
     (component Capacitors_SMD:C_0805
-      (place C1 129667 -114681 front 270 (PN C))
-      (place C3 129350 -108712 front 90 (PN C))
-    )
-    (component lib:SO8
-      (place U3 124104 -109626 front 90 (PN EEPROM))
+      (place C1 148082 -120269 front 180 (PN C))
+      (place C3 143510 -115570 front 0 (PN C))
     )
     (component lib:5pad_test
-      (place J1 109576 -107874 front 0 (PN Conn_01x06))
-    )
-    (component lib:BMP388
-      (place U2 121666 -114884 front 0 (PN BMP380))
+      (place J1 110617 -109347 back 180 (PN Conn_01x06))
     )
     (component LEDs:LED_0603
-      (place D1 127127 -114732 front 270 (PN LED))
+      (place D1 140335 -116205 front 270 (PN LED))
     )
     (component Resistors_SMD:R_0603
-      (place R1 125247 -114732 front 270 (PN R))
-      (place R2 129540 -111633 front 180 (PN R))
-      (place R3 132207 -108839 front 90 (PN R))
+      (place R1 140335 -119507 front 90 (PN R))
+      (place R2 143510 -113538 front 180 (PN R))
+      (place R3 140462 -113538 front 180 (PN R))
     )
     (component "TO_SOT_Packages_SMD:SOT-23"
-      (place U4 132842 -113030 front 270 (PN AP2210N))
+      (place U4 143383 -119126 front 270 (PN AP2210N))
     )
     (component "lib:2pin-2.54mm"
-      (place J2 134493 -118300 front 180 (PN Conn_01x02))
+      (place J2 148971 -115951 front 270 (PN Conn_01x02))
     )
     (component "lib:2-56_hole"
-      (place J5 146748 -129159 front 0 (PN Conn_01x01))
+      (place J5 160274 -129413 front 0 (PN Conn_01x01))
     )
     (component "lib:2-56_hole::1"
-      (place J7 121666 -119228 front 0 (PN Conn_01x01))
+      (place J7 121666 -119507 front 0 (PN Conn_01x01))
     )
     (component lib:ISP4520
-      (place U1 115164 -115113 front 90 (PN ISP4520))
+      (place U1 115316 -116078 front 90 (PN ISP4520))
     )
     (component "lib:CAM-M8"
-      (place U5 144336 -114236 front 0 (PN "CAM-M8"))
+      (place U5 130048 -114427 front 90 (PN "CAM-M8"))
+    )
+    (component lib:USON8
+      (place U3 122047 -115062 front 90 (PN EEPROM))
     )
   )
   (library
@@ -125,21 +120,6 @@
       (pin Rect[T]Pad_1000x1250_um 1 -1000 0)
       (pin Rect[T]Pad_1000x1250_um 2 1000 0)
     )
-    (image lib:SO8
-      (outline (path signal 150  -1705 3850  -2705 2850))
-      (outline (path signal 150  -2705 2850  -2705 -3850))
-      (outline (path signal 150  -2705 -3850  2705 -3850))
-      (outline (path signal 150  2705 -3850  2705 3850))
-      (outline (path signal 150  2705 3850  -1705 3850))
-      (pin Rect[T]Pad_600x1400_um 8 -1905 2650)
-      (pin Rect[T]Pad_600x1400_um 1 -1905 -2650)
-      (pin Rect[T]Pad_600x1400_um 7 -635 2650)
-      (pin Rect[T]Pad_600x1400_um 2 -635 -2650)
-      (pin Rect[T]Pad_600x1400_um 6 635 2650)
-      (pin Rect[T]Pad_600x1400_um 3 635 -2650)
-      (pin Rect[T]Pad_600x1400_um 5 1905 2650)
-      (pin Rect[T]Pad_600x1400_um 4 1905 -2650)
-    )
     (image lib:5pad_test
       (outline (path signal 150  -5286.5 1206.5  -6286.5 206.5))
       (outline (path signal 150  -6286.5 206.5  -6286.5 -1206.5))
@@ -151,22 +131,6 @@
       (pin Rect[T]Pad_1905x1905_um 3 0 0)
       (pin Rect[T]Pad_1905x1905_um 4 2540 0)
       (pin Rect[T]Pad_1905x1905_um 5 5080 0)
-    )
-    (image lib:BMP388
-      (outline (path signal 150  -1000 1000  1000 1000))
-      (outline (path signal 150  1000 1000  1000 -1000))
-      (outline (path signal 150  1000 -1000  -1000 -1000))
-      (outline (path signal 150  -1000 -1000  -1000 1000))
-      (pin Rect[T]Pad_250x275_um 6 -250 -762.5)
-      (pin Rect[T]Pad_250x275_um 7 250 -762.5)
-      (pin Rect[T]Pad_250x275_um 1 250 762.5)
-      (pin Rect[T]Pad_250x275_um 2 -250 762.5)
-      (pin Rect[T]Pad_250x275_um (rotate 270) 10 762.5 500)
-      (pin Rect[T]Pad_250x275_um (rotate 270) 3 -762.5 500)
-      (pin Rect[T]Pad_250x275_um (rotate 270) 9 762.5 0)
-      (pin Rect[T]Pad_250x275_um (rotate 270) 4 -762.5 0)
-      (pin Rect[T]Pad_250x275_um (rotate 270) 8 762.5 -500)
-      (pin Rect[T]Pad_250x275_um (rotate 270) 5 -762.5 -500)
     )
     (image LEDs:LED_0603
       (outline (path signal 120  -1300 500  -1300 -500))
@@ -373,9 +337,28 @@
       (pin Rect[T]Pad_700x1500_um 12 5500 -4400)
       (pin Rect[T]Pad_1000x1500_um 13 6650 -4400)
     )
+    (image lib:USON8
+      (outline (path signal 100  1500 1000  -1500 1000))
+      (outline (path signal 100  -1500 1000  -1500 -1000))
+      (outline (path signal 100  -1500 -1000  1500 -1000))
+      (outline (path signal 100  1500 -1000  1500 1000))
+      (pin Rect[T]Pad_250x350_um (rotate 270) 8 1225 750)
+      (pin Rect[T]Pad_250x350_um (rotate 270) 1 -1225 750)
+      (pin Rect[T]Pad_250x350_um (rotate 270) 7 1225 250)
+      (pin Rect[T]Pad_250x350_um (rotate 270) 2 -1225 250)
+      (pin Rect[T]Pad_250x350_um (rotate 270) 6 1225 -250)
+      (pin Rect[T]Pad_250x350_um (rotate 270) 3 -1225 -250)
+      (pin Rect[T]Pad_250x350_um (rotate 270) 5 1225 -750)
+      (pin Rect[T]Pad_250x350_um (rotate 270) 4 -1225 -750)
+      (pin Rect[T]Pad_200x1600_um 9 0 0)
+    )
     (padstack Round[A]Pad_3937_um
       (shape (circle F.Cu 3937))
       (shape (circle B.Cu 3937))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_200x1600_um
+      (shape (rect F.Cu -100 -800 100 800))
       (attach off)
     )
     (padstack Rect[A]Pad_2000x2000_um
@@ -383,8 +366,8 @@
       (shape (rect B.Cu -1000 -1000 1000 1000))
       (attach off)
     )
-    (padstack Rect[T]Pad_250x275_um
-      (shape (rect F.Cu -125 -137.5 125 137.5))
+    (padstack Rect[T]Pad_250x350_um
+      (shape (rect F.Cu -125 -175 125 175))
       (attach off)
     )
     (padstack Rect[T]Pad_300x650_um
@@ -393,10 +376,6 @@
     )
     (padstack Rect[T]Pad_500x900_um
       (shape (rect F.Cu -250 -450 250 450))
-      (attach off)
-    )
-    (padstack Rect[T]Pad_600x1400_um
-      (shape (rect F.Cu -300 -700 300 700))
       (attach off)
     )
     (padstack Rect[T]Pad_700x700_um
@@ -455,27 +434,27 @@
       (pins J1-2 U1-38)
     )
     (net VDD
-      (pins C2-1 U3-8 U3-7 U3-3 J1-5 U2-1 U2-10 R1-1 C3-1 U4-2 U1-15 U5-1 U5-8 U5-9)
+      (pins C2-1 J1-5 R1-1 C3-1 U4-2 U1-15 U5-1 U5-8 U5-9 U3-8 U3-7 U3-3)
     )
     (net SWDCLK
       (pins J1-3 U1-37)
     )
     (net GND
-      (pins C2-2 SW2-1 SW2-1@1 C1-2 U3-4 J1-1 U2-3 U2-9 U2-8 C3-2 U4-1 J2-1 J5-1 J7-1
-        U1-74 U1-74@1 U1-74@2 U1-74@3 U1-74@4 U1-74@5 U1-74@6 U1-74@7 U1-74@8 U1-74@9
-        U1-74@10 U1-74@11 U1-74@12 U1-74@13 U1-74@14 U1-74@15 U1-74@16 U1-74@17 U1-74@18
-        U1-74@19 U1-74@20 U1-74@21 U1-74@22 U1-23 U1-36 U1-1 U1-22 U1-21 U1-33 U1-32
-        U1-31 U1-30 U1-29 U1-28 U1-27 U1-26 U1-14 U1-74@23 U5-27 U5-31 U5-14 U5-4
-        U5-22 U5-5 U5-21 U5-20 U5-19 U5-18 U5-10 U5-11 U5-15 U5-12 U5-13 R3-2)
+      (pins C2-2 SW2-1 SW2-1@1 C1-2 J1-1 C3-2 U4-1 J2-1 J5-1 J7-1 U1-74 U1-74@1 U1-74@2
+        U1-74@3 U1-74@4 U1-74@5 U1-74@6 U1-74@7 U1-74@8 U1-74@9 U1-74@10 U1-74@11
+        U1-74@12 U1-74@13 U1-74@14 U1-74@15 U1-74@16 U1-74@17 U1-74@18 U1-74@19 U1-74@20
+        U1-74@21 U1-74@22 U1-23 U1-36 U1-1 U1-22 U1-21 U1-33 U1-32 U1-31 U1-30 U1-29
+        U1-28 U1-27 U1-26 U1-14 U1-74@23 U5-27 U5-31 U5-14 U5-4 U5-22 U5-5 U5-21 U5-20
+        U5-19 U5-18 U5-10 U5-11 U5-15 U5-12 U5-13 R3-2 U3-4)
     )
     (net MOSI
-      (pins U3-5 U2-4 U1-12 U5-26)
+      (pins U1-12 U5-26 U3-5)
     )
     (net SCK
-      (pins U3-6 U2-2 U1-13 U5-6)
+      (pins U1-13 U5-6 U3-6)
     )
     (net MISO
-      (pins U3-2 U2-5 U1-20 U5-25)
+      (pins U1-20 U5-25 U3-2)
     )
     (net DFU
       (pins SW2-2 SW2-2@1 U1-42)
@@ -505,13 +484,13 @@
       (pins U1-18 R2-2 R3-1)
     )
     (net CS_Baro
-      (pins U2-6 U1-19)
+      (pins U1-19)
     )
     (net CS_GPS
       (pins U1-3 U5-3)
     )
     (net CS_Flash
-      (pins U3-1 U1-7)
+      (pins U1-7 U3-1)
     )
     (class kicad_default "" CS_Baro CS_Flash CS_GPS DFU GND LED1 MISO MOSI
       "Net-(D1-Pad2)" "Net-(U1-Pad24)" "Net-(U1-Pad34)" "Net-(U2-Pad7)" "Net-(U5-Pad16)"
@@ -535,15 +514,5 @@
     )
   )
   (wiring
-    (wire (path B.Cu 203.2  107061 -107886  107048 -107886  107036 -107874)(net SWDIO)(type protect))
-    (wire (path B.Cu 203.2  114681 -107886  114668 -107886  114656 -107874)(net VDD)(type protect))
-    (wire (path B.Cu 203.2  109601 -107886  109588 -107886  109576 -107874)(net SWDCLK)(type protect))
-    (wire (path B.Cu 203.2  104521 -107886  104508 -107886  104496 -107874)(net GND)(type protect))
-    (wire (path B.Cu 203.2  112141 -107886  112128 -107886  112116 -107874)(net RESET)(type protect))
-    (via "Via[0-1]_508:254_um"  107036 -107874 (net SWDIO)(type protect))
-    (via "Via[0-1]_508:254_um"  114656 -107874 (net VDD)(type protect))
-    (via "Via[0-1]_508:254_um"  109576 -107874 (net SWDCLK)(type protect))
-    (via "Via[0-1]_508:254_um"  104496 -107874 (net GND)(type protect))
-    (via "Via[0-1]_508:254_um"  112116 -107874 (net RESET)(type protect))
   )
 )

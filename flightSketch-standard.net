@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/russ/Desktop/board/board/flightSketch-standard.sch)
-    (date "Tuesday, September 03, 2019 'PMt' 10:15:44 PM")
+    (date "Monday, October 14, 2019 'PMt' 10:52:39 PM")
     (tool "Eeschema 4.0.7")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -17,7 +17,7 @@
   (components
     (comp (ref U3)
       (value EEPROM)
-      (footprint lib:SO8)
+      (footprint lib:USON8)
       (libsource (lib lib) (part EEPROM))
       (sheetpath (names /) (tstamps /))
       (tstamp 5BF2300F))
@@ -314,14 +314,14 @@
         (pin (num 1) (name 1) (type passive))
         (pin (num 2) (name 2) (type passive)))))
   (libraries
+    (library (logical lib)
+      (uri /Users/russ/Desktop/board/board/lib.lib))
     (library (logical device)
       (uri "/Library/Application Support/kicad/library/device.lib"))
     (library (logical switches)
       (uri "/Library/Application Support/kicad/library/switches.lib"))
     (library (logical conn)
-      (uri "/Library/Application Support/kicad/library/conn.lib"))
-    (library (logical lib)
-      (uri /Users/russ/Desktop/board/board/lib.lib)))
+      (uri "/Library/Application Support/kicad/library/conn.lib")))
   (nets
     (net (code 1) (name SWDCLK)
       (node (ref J1) (pin 3))
