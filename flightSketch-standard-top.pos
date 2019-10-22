@@ -1,0 +1,19 @@
+### Module positions - created on Monday, October 21, 2019 'PMt' 10:02:04 PM ###
+### Printed by Pcbnew version kicad 4.0.7
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val         Package                PosX       PosY       Rot  Side
+C1        C           C_0805             124.7140  -116.6500  270.0000  top
+C2        C           C_0603             117.9200  -115.8880   90.0000  top
+C3        C           C_0603             117.9200  -112.5220  270.0000  top
+D1        LED         LED_0603           120.7770  -108.9660  270.0000  top
+J1        Conn_01x06  5pad_test          109.4740  -108.5850    0.0000  top
+Q1        Q_PMOS_DGS  DFN1006            122.4920  -113.8560  270.0000  top
+R1        R           R_0603             120.7770  -111.7600   90.0000  top
+R2        R           R_0603             124.6500  -113.8560    0.0000  top
+SW1       SW_SPST     SW_SPST_EVQP7A     124.2060  -110.1720   90.0000  top
+U1        BM833A      BM833              116.7130  -120.8400   90.0000  top
+U2        BMP380      BMP388             121.4120  -116.2050    0.0000  top
+U3        FLASH       USON8              118.1740  -109.0300  270.0000  top
+U4        BMA253      BMA2x2             119.6340  -119.5070   45.0000  top
+## End
