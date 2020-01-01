@@ -1,4 +1,4 @@
-update=Wednesday, January 01, 2020 'PMt' 02:59:47 PM
+update=Wednesday, January 01, 2020 'PMt' 03:17:06 PM
 version=1
 last_client=kicad
 [cvpcb]
@@ -57,7 +57,7 @@ LabSize=60
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=_saved_flightSketch-standard.net
+LastNetListRead=flightSketch-standard.net
 PadDrill=0.762
 PadDrillOvalY=0.762
 PadSizeH=1.524

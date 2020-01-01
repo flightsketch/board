@@ -49,50 +49,31 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L bl651-RESCUE-flightSketch-standard U1
-U 1 1 5BE8F532
-P 1950 950
-F 0 "U1" H 1950 850 60  0000 C CNN
-F 1 "bl651" H 1950 950 60  0000 C CNN
-F 2 "lib:BL651" H 1950 950 60  0001 C CNN
-F 3 "" H 1950 950 60  0001 C CNN
-	1    1950 950 
-	1    0    0    -1  
-$EndComp
-$Comp
 L EEPROM U3
 U 1 1 5BF2300F
 P 7200 1750
 F 0 "U3" H 6900 2000 50  0000 L CNN
 F 1 "EEPROM" H 7250 2000 50  0000 L CNN
-F 2 "lib:SO8" H 6850 1700 50  0001 C CNN
+F 2 "lib:USON8" H 6850 1700 50  0001 C CNN
 F 3 "" H 6850 1700 50  0001 C CNN
 	1    7200 1750
 	1    0    0    -1  
 $EndComp
 Text GLabel 950  600  0    39   Input ~ 0
 GND
-Text GLabel 950  700  0    39   Input ~ 0
-GND
-Text GLabel 950  800  0    39   Input ~ 0
-GND
-Text GLabel 950  900  0    39   Input ~ 0
-GND
-Text GLabel 950  1000 0    39   Input ~ 0
+Text GLabel 950  1700 0    39   Input ~ 0
 VDD
-Text GLabel 950  1250 0    39   Input ~ 0
+Text GLabel 950  2050 0    39   Input ~ 0
 SWDCLK
-Text GLabel 950  1150 0    39   Input ~ 0
+Text GLabel 950  1950 0    39   Input ~ 0
 SWDIO
-Text GLabel 950  1350 0    39   Input ~ 0
+Text GLabel 950  2150 0    39   Input ~ 0
 RESET
-Text GLabel 950  1450 0    39   Input ~ 0
-P0.18
-Text GLabel 2900 600  2    39   Input ~ 0
+Text GLabel 2900 1600 2    39   Input ~ 0
 SCK
-Text GLabel 2900 800  2    39   Input ~ 0
+Text GLabel 2900 1700 2    39   Input ~ 0
 MOSI
-Text GLabel 2900 700  2    39   Input ~ 0
+Text GLabel 950  2250 0    39   Input ~ 0
 MISO
 Text GLabel 6500 1700 0    39   Input ~ 0
 VDD
@@ -123,7 +104,7 @@ Text GLabel 3650 5750 2    39   Input ~ 0
 DFU
 Text GLabel 2700 5750 0    39   Input ~ 0
 GND
-Text GLabel 2900 900  2    39   Input ~ 0
+Text GLabel 2900 1800 2    39   Input ~ 0
 CS_Baro
 Text GLabel 6500 1850 0    39   Input ~ 0
 CS_Flash
@@ -321,9 +302,9 @@ Text GLabel 9300 3950 3    39   Input ~ 0
 MOSI
 Text GLabel 9550 3950 3    39   Input ~ 0
 MISO
-Text GLabel 2900 1600 2    39   Input ~ 0
+Text GLabel 2900 1500 2    39   Input ~ 0
 CS_ACCEL
-Text GLabel 2900 1700 2    39   Input ~ 0
+Text GLabel 2900 2100 2    39   Input ~ 0
 CS_GYRO
 Text GLabel 2900 1900 2    39   Input ~ 0
 PYRO1
@@ -456,17 +437,6 @@ F 3 "" H 10700 5900 50  0001 C CNN
 	1    10700 5900
 	0    1    1    0   
 $EndComp
-$Comp
-L R R10
-U 1 1 5D5A4149
-P 8400 4950
-F 0 "R10" V 8480 4950 50  0000 C CNN
-F 1 "R" V 8400 4950 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 8330 4950 50  0001 C CNN
-F 3 "" H 8400 4950 50  0001 C CNN
-	1    8400 4950
-	0    1    1    0   
-$EndComp
 Text GLabel 2900 1200 2    39   Input ~ 0
 CONT1
 Text GLabel 2900 1300 2    39   Input ~ 0
@@ -482,30 +452,6 @@ F 3 "" H 2050 7050 50  0001 C CNN
 	1    2050 7050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	950  600  1250 600 
-Wire Wire Line
-	950  700  1250 700 
-Wire Wire Line
-	950  800  1250 800 
-Wire Wire Line
-	950  900  1250 900 
-Wire Wire Line
-	950  1000 1250 1000
-Wire Wire Line
-	950  1250 1250 1250
-Wire Wire Line
-	950  1150 1250 1150
-Wire Wire Line
-	950  1350 1250 1350
-Wire Wire Line
-	950  1450 1250 1450
-Wire Wire Line
-	2550 600  2900 600 
-Wire Wire Line
-	2550 700  2900 700 
-Wire Wire Line
-	2550 800  2900 800 
 Wire Wire Line
 	6500 1700 6650 1700
 Wire Wire Line
@@ -530,13 +476,7 @@ Wire Wire Line
 Wire Wire Line
 	7200 1300 7200 1450
 Wire Wire Line
-	2550 1100 2900 1100
-Wire Wire Line
-	2550 900  2900 900 
-Wire Wire Line
 	6500 1850 6800 1850
-Wire Wire Line
-	2550 1000 2900 1000
 Wire Wire Line
 	1150 5450 1550 5450
 Wire Wire Line
@@ -571,8 +511,6 @@ Connection ~ 5650 3050
 Wire Wire Line
 	5800 3350 5800 3450
 Connection ~ 5800 3450
-Wire Wire Line
-	2550 1400 2900 1400
 Wire Wire Line
 	3400 3700 3200 3700
 Wire Wire Line
@@ -684,14 +622,6 @@ Wire Wire Line
 	10550 6400 10550 6050
 Connection ~ 10550 6050
 Wire Wire Line
-	2550 1600 2900 1600
-Wire Wire Line
-	2550 1700 2900 1700
-Wire Wire Line
-	2550 1900 2900 1900
-Wire Wire Line
-	2550 2000 2900 2000
-Wire Wire Line
 	1500 7150 1750 7150
 Wire Wire Line
 	1800 7600 1650 7600
@@ -770,17 +700,9 @@ Wire Wire Line
 	8450 5950 8450 5550
 Connection ~ 8450 5550
 Wire Wire Line
-	2550 2200 2900 2200
+	7500 4950 8800 4950
 Wire Wire Line
-	2550 1200 2900 1200
-Wire Wire Line
-	2550 1300 2900 1300
-Wire Wire Line
-	8800 4950 8550 4950
-Wire Wire Line
-	8250 4950 7500 4950
-Wire Wire Line
-	7500 4950 7500 5550
+	7500 5550 7500 4950
 Wire Wire Line
 	7900 4950 7900 5150
 Wire Wire Line
@@ -822,8 +744,6 @@ Wire Wire Line
 	3050 2300 2800 2300
 Wire Wire Line
 	2800 2300 2800 2450
-Wire Wire Line
-	2800 2350 2550 2350
 Wire Wire Line
 	2800 2450 3050 2450
 Connection ~ 2800 2350
@@ -916,10 +836,10 @@ Connection ~ 8500 3250
 Text GLabel 1850 3150 2    39   Input ~ 0
 VBATT_SENSE
 $Comp
-L R R?
+L R R8
 U 1 1 5E0CE9A2
 P 1650 2800
-F 0 "R?" V 1730 2800 50  0000 C CNN
+F 0 "R8" V 1730 2800 50  0000 C CNN
 F 1 "R" V 1650 2800 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 1580 2800 50  0001 C CNN
 F 3 "" H 1650 2800 50  0001 C CNN
@@ -927,10 +847,10 @@ F 3 "" H 1650 2800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R?
+L R R12
 U 1 1 5E0CEA2D
 P 1650 3450
-F 0 "R?" V 1730 3450 50  0000 C CNN
+F 0 "R12" V 1730 3450 50  0000 C CNN
 F 1 "R" V 1650 3450 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 1580 3450 50  0001 C CNN
 F 3 "" H 1650 3450 50  0001 C CNN
@@ -954,4 +874,92 @@ Wire Wire Line
 Wire Wire Line
 	1850 3150 1650 3150
 Connection ~ 1650 3150
+$Comp
+L BM832A U1
+U 1 1 5E0D00E7
+P 1950 950
+F 0 "U1" H 1950 850 60  0000 C CNN
+F 1 "BM832A" H 1950 950 60  0000 C CNN
+F 2 "lib:BM832" H 1950 950 60  0001 C CNN
+F 3 "" H 1950 950 60  0001 C CNN
+	1    1950 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 1200 2900 1200
+Wire Wire Line
+	2550 1300 2900 1300
+Wire Wire Line
+	2550 1000 2900 1000
+Wire Wire Line
+	2550 1100 2900 1100
+Wire Wire Line
+	2550 1400 2900 1400
+Wire Wire Line
+	2550 1600 2900 1600
+Wire Wire Line
+	2550 1700 2900 1700
+Wire Wire Line
+	2550 1500 2900 1500
+Wire Wire Line
+	950  2250 1250 2250
+Wire Wire Line
+	950  2150 1250 2150
+Wire Wire Line
+	950  2050 1250 2050
+Wire Wire Line
+	950  1950 1250 1950
+Wire Wire Line
+	950  1700 1250 1700
+Wire Wire Line
+	1250 1800 1100 1800
+Wire Wire Line
+	1100 1800 1100 1700
+Connection ~ 1100 1700
+Wire Wire Line
+	950  600  1250 600 
+Wire Wire Line
+	1250 700  1100 700 
+Wire Wire Line
+	1100 600  1100 1600
+Connection ~ 1100 600 
+Wire Wire Line
+	1100 800  1250 800 
+Connection ~ 1100 700 
+Wire Wire Line
+	1100 900  1250 900 
+Connection ~ 1100 800 
+Wire Wire Line
+	1100 1000 1250 1000
+Connection ~ 1100 900 
+Wire Wire Line
+	1100 1100 1250 1100
+Connection ~ 1100 1000
+Wire Wire Line
+	1100 1200 1250 1200
+Connection ~ 1100 1100
+Wire Wire Line
+	1100 1300 1250 1300
+Connection ~ 1100 1200
+Wire Wire Line
+	1100 1400 1250 1400
+Connection ~ 1100 1300
+Wire Wire Line
+	1100 1500 1250 1500
+Connection ~ 1100 1400
+Wire Wire Line
+	1100 1600 1250 1600
+Connection ~ 1100 1500
+Wire Wire Line
+	2550 2350 2800 2350
+Wire Wire Line
+	2550 2200 2900 2200
+Wire Wire Line
+	2550 2000 2900 2000
+Wire Wire Line
+	2550 1900 2900 1900
+Wire Wire Line
+	2550 1800 2900 1800
+Wire Wire Line
+	2550 2100 2900 2100
 $EndSCHEMATC
