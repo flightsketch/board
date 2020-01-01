@@ -49,17 +49,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L bl651-RESCUE-flightSketch-standard U1
-U 1 1 5BE8F532
-P 1950 950
-F 0 "U1" H 1950 850 60  0000 C CNN
-F 1 "bl651" H 1950 950 60  0000 C CNN
-F 2 "lib:BL651" H 1950 950 60  0001 C CNN
-F 3 "" H 1950 950 60  0001 C CNN
-	1    1950 950 
-	1    0    0    -1  
-$EndComp
-$Comp
 L EEPROM U3
 U 1 1 5BF2300F
 P 7200 1750
@@ -483,30 +472,6 @@ F 3 "" H 2050 7050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	950  600  1250 600 
-Wire Wire Line
-	950  700  1250 700 
-Wire Wire Line
-	950  800  1250 800 
-Wire Wire Line
-	950  900  1250 900 
-Wire Wire Line
-	950  1000 1250 1000
-Wire Wire Line
-	950  1250 1250 1250
-Wire Wire Line
-	950  1150 1250 1150
-Wire Wire Line
-	950  1350 1250 1350
-Wire Wire Line
-	950  1450 1250 1450
-Wire Wire Line
-	2550 600  2900 600 
-Wire Wire Line
-	2550 700  2900 700 
-Wire Wire Line
-	2550 800  2900 800 
-Wire Wire Line
 	6500 1700 6650 1700
 Wire Wire Line
 	6650 1650 6650 1750
@@ -530,13 +495,7 @@ Wire Wire Line
 Wire Wire Line
 	7200 1300 7200 1450
 Wire Wire Line
-	2550 1100 2900 1100
-Wire Wire Line
-	2550 900  2900 900 
-Wire Wire Line
 	6500 1850 6800 1850
-Wire Wire Line
-	2550 1000 2900 1000
 Wire Wire Line
 	1150 5450 1550 5450
 Wire Wire Line
@@ -571,8 +530,6 @@ Connection ~ 5650 3050
 Wire Wire Line
 	5800 3350 5800 3450
 Connection ~ 5800 3450
-Wire Wire Line
-	2550 1400 2900 1400
 Wire Wire Line
 	3400 3700 3200 3700
 Wire Wire Line
@@ -684,10 +641,6 @@ Wire Wire Line
 	10550 6400 10550 6050
 Connection ~ 10550 6050
 Wire Wire Line
-	2550 1600 2900 1600
-Wire Wire Line
-	2550 1700 2900 1700
-Wire Wire Line
 	2550 1900 2900 1900
 Wire Wire Line
 	2550 2000 2900 2000
@@ -771,10 +724,6 @@ Wire Wire Line
 Connection ~ 8450 5550
 Wire Wire Line
 	2550 2200 2900 2200
-Wire Wire Line
-	2550 1200 2900 1200
-Wire Wire Line
-	2550 1300 2900 1300
 Wire Wire Line
 	8800 4950 8550 4950
 Wire Wire Line
@@ -954,4 +903,15 @@ Wire Wire Line
 Wire Wire Line
 	1850 3150 1650 3150
 Connection ~ 1650 3150
+$Comp
+L BM832A U?
+U 1 1 5E0D00E7
+P 1950 950
+F 0 "U?" H 1950 850 60  0000 C CNN
+F 1 "BM832A" H 1950 950 60  0000 C CNN
+F 2 "" H 1950 950 60  0001 C CNN
+F 3 "" H 1950 950 60  0001 C CNN
+	1    1950 950 
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
