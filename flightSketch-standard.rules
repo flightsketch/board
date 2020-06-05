@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 2366)
+    (start_pass_no 58)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -53,11 +53,23 @@
     )
     (attach off)
   )
+  (padstack "Via[0-1]_1016:508_um"
+    (shape
+      (circle F.Cu 1016.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 1016.0 0.0 0.0)
+    )
+    (attach off)
+  )
   (via 
     "Via[0-1]_508:254_um" "Via[0-1]_508:254_um" default
   )
   (via 
     "Via[0-1]_600:400_um" "Via[0-1]_600:400_um" default
+  )
+  (via 
+    "Via[0-1]_1016:508_um" "Via[0-1]_1016:508_um" default
   )
   (via 
     "Via[0-1]_508:254_um-kicad_default" "Via[0-1]_508:254_um" "kicad_default"
@@ -66,10 +78,16 @@
     "Via[0-1]_600:400_um-kicad_default" "Via[0-1]_600:400_um" "kicad_default"
   )
   (via 
+    "Via[0-1]_1016:508_um-kicad_default" "Via[0-1]_1016:508_um" "kicad_default"
+  )
+  (via 
     "Via[0-1]_508:254_um-Power" "Via[0-1]_508:254_um" Power
   )
   (via 
     "Via[0-1]_600:400_um-Power" "Via[0-1]_600:400_um" Power
+  )
+  (via 
+    "Via[0-1]_1016:508_um-Power" "Via[0-1]_1016:508_um" Power
   )
   (via_rule
     default "Via[0-1]_508:254_um"
@@ -91,10 +109,10 @@
     )
   )
   (class "kicad_default"
-    SWDIO VDD SWDCLK GND RESET MOSI SCK MISO
+    GND SWDIO VDD SWDCLK RESET MOSI SCK MISO
     "CS_Baro" "CS_Flash" VBATT "Net-(D1-Pad2)" LED1 PYRO1 PYRO2 "CS_ACCEL"
     "CS_GYRO" P1OUT P2OUT "Net-(R3-Pad1)" CONT1 "Net-(R7-Pad1)" CONT2 "Net-(R2-Pad2)"
-    "VBATT_SENSE" DFU
+    "VBATT_SENSE"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule

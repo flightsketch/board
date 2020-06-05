@@ -54,7 +54,7 @@ U 1 1 5BF2300F
 P 7200 1750
 F 0 "U3" H 6900 2000 50  0000 L CNN
 F 1 "EEPROM" H 7250 2000 50  0000 L CNN
-F 2 "lib:USON8" H 6850 1700 50  0001 C CNN
+F 2 "lib:WSON6x5" H 6850 1700 50  0001 C CNN
 F 3 "" H 6850 1700 50  0001 C CNN
 	1    7200 1750
 	1    0    0    -1  
@@ -87,23 +87,8 @@ Text GLabel 7750 1850 2    39   Input ~ 0
 MISO
 Text GLabel 7050 1300 0    39   Input ~ 0
 VDD
-$Comp
-L SW_Push SW2
-U 1 1 5C36D239
-P 3200 5750
-F 0 "SW2" H 3250 5850 50  0000 L CNN
-F 1 "SW_Push" H 3200 5690 50  0000 C CNN
-F 2 "lib:bt" H 3200 5950 50  0001 C CNN
-F 3 "" H 3200 5950 50  0001 C CNN
-	1    3200 5750
-	1    0    0    -1  
-$EndComp
 Text GLabel 2900 1100 2    39   Input ~ 0
 DFU
-Text GLabel 3650 5750 2    39   Input ~ 0
-DFU
-Text GLabel 2700 5750 0    39   Input ~ 0
-GND
 Text GLabel 2900 1800 2    39   Input ~ 0
 CS_Baro
 Text GLabel 6500 1850 0    39   Input ~ 0
@@ -605,10 +590,6 @@ Wire Wire Line
 Wire Wire Line
 	9600 3850 9600 3800
 Connection ~ 9550 3850
-Wire Wire Line
-	2700 5750 3000 5750
-Wire Wire Line
-	3400 5750 3650 5750
 Connection ~ 5750 5550
 Wire Wire Line
 	10450 5550 10750 5550

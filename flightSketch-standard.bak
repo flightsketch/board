@@ -1,6 +1,10 @@
 EESchema Schematic File Version 2
+LIBS:flightSketch-standard-rescue
 LIBS:power
 LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
 LIBS:transistors
 LIBS:conn
 LIBS:linear
@@ -29,7 +33,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:lib
-LIBS:_saved_flightSketch-standard-cache
+LIBS:flightSketch-standard-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -433,17 +437,6 @@ F 3 "" H 10700 5900 50  0001 C CNN
 	1    10700 5900
 	0    1    1    0   
 $EndComp
-$Comp
-L R R10
-U 1 1 5D5A4149
-P 8400 4950
-F 0 "R10" V 8480 4950 50  0000 C CNN
-F 1 "R" V 8400 4950 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 8330 4950 50  0001 C CNN
-F 3 "" H 8400 4950 50  0001 C CNN
-	1    8400 4950
-	0    1    1    0   
-$EndComp
 Text GLabel 2900 1200 2    39   Input ~ 0
 CONT1
 Text GLabel 2900 1300 2    39   Input ~ 0
@@ -707,11 +700,9 @@ Wire Wire Line
 	8450 5950 8450 5550
 Connection ~ 8450 5550
 Wire Wire Line
-	8800 4950 8550 4950
+	7500 4950 8800 4950
 Wire Wire Line
-	8250 4950 7500 4950
-Wire Wire Line
-	7500 4950 7500 5550
+	7500 5550 7500 4950
 Wire Wire Line
 	7900 4950 7900 5150
 Wire Wire Line
